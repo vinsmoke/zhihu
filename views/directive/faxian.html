@@ -1,0 +1,23 @@
+<div id="faxian" ng-colntroller="faxianCtrl">
+	 <div class="rows ">
+      <div class="col"><a href="">推荐</a></div>
+      <div class="col"><a href="">圆桌</a></div>
+      <div class="col"><a href="">热门</a></div>
+      <div class="col"><a href="">搜索</a></div>
+      <div class="hengtiao" ></div>
+      </div>
+<!--       <div class="hengtiao" ></div> -->
+      <div class="wenzhang" id="toushang">
+		<div class="zuo"><img src="./image/zgzh.png" alt=""></div>
+		<div class="you"><a class="a">第六职|职业</a><a class="aa">知乎周刊特刊VOL.9036</a></div>
+	</div>
+      <div class="wenzhang" ng-repeat="v in yuanzhu">
+		 <div class="shang">
+			<div class="shangzu"><img src="{{v.image}}" alt=""></div>
+			<div class="shangzh">{{v.p}}</div>
+			<div class="yo">{{v.zan}}</div>
+		</div>
+		<div class="zhong">{{v.title}}</div>
+		<div class="zhongxia">{{v.text}}</div>
+	</div>
+</div>
